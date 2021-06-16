@@ -1,0 +1,68 @@
+[debug] [2021-06-16T20:09:35.993Z] ----------------------------------------------------------------------
+[debug] [2021-06-16T20:09:35.994Z] Command:       /usr/bin/node /usr/bin/firebase init
+[debug] [2021-06-16T20:09:35.994Z] CLI Version:   9.13.0
+[debug] [2021-06-16T20:09:35.994Z] Platform:      linux
+[debug] [2021-06-16T20:09:35.994Z] Node Version:  v16.3.0
+[debug] [2021-06-16T20:09:35.994Z] Time:          Wed Jun 16 2021 16:09:35 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-06-16T20:09:35.994Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-16T20:09:35.996Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-16T20:09:35.996Z] > authorizing via signed-in user (aarondovturkel@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/adt/Development/personal/adt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-06-16T20:10:20.288Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-06-16T20:10:20.542Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-06-16T20:10:20.542Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project adt-portfolio (adt-portfolio) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-06-16T20:10:51.195Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-06-16T20:10:51.242Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-06-16T20:10:51.243Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.6.7","browserURL":"https://www.gstatic.com/firebasejs/8.6.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.6.7/firebase.tgz"},"live":{"version":"8.6","browserURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.6.7/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.6.7/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.6.7/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.6.7/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.6.7/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.6.7/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/adt/Development/personal/adt 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=720713986&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-06-16T20:11:35.682Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"81149075c1c0289ecb90","redirect_uri":"http://localhost:9005","state":"720713986"}
+[debug] [2021-06-16T20:11:35.810Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 16 Jun 2021 20:11:35 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"4ed36b4d2e8374283d898c87a8acea6e\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com html-translator.herokuapp.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"AE4A:6CE9:105B181:1672822:60CA5AF7"}
+[debug] [2021-06-16T20:11:35.815Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-06-16T20:11:36.107Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-06-16T20:11:36.107Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"AaronDovTurkel","id":42723274,"node_id":"MDQ6VXNlcjQyNzIzMjc0","avatar_url":"https://avatars.githubusercontent.com/u/42723274?v=4","gravatar_id":"","url":"https://api.github.com/users/AaronDovTurkel","html_url":"https://github.com/AaronDovTurkel","followers_url":"https://api.github.com/users/AaronDovTurkel/followers","following_url":"https://api.github.com/users/AaronDovTurkel/following{/other_user}","gists_url":"https://api.github.com/users/AaronDovTurkel/gists{/gist_id}","starred_url":"https://api.github.com/users/AaronDovTurkel/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AaronDovTurkel/subscriptions","organizations_url":"https://api.github.com/users/AaronDovTurkel/orgs","repos_url":"https://api.github.com/users/AaronDovTurkel/repos","events_url":"https://api.github.com/users/AaronDovTurkel/events{/privacy}","received_events_url":"https://api.github.com/users/AaronDovTurkel/received_events","type":"User","site_admin":false,"name":"adt","company":"@fabuwood","blog":"","location":"Teaneck, NJ","email":null,"hireable":true,"bio":"I am a full-stack developer interested in new tech, brewing, and custom keyboards.","twitter_username":null,"public_repos":23,"public_gists":25,"followers":3,"following":5,"created_at":"2018-08-26T21:42:02Z","updated_at":"2021-06-16T20:11:35Z","private_gists":4,"total_private_repos":4,"owned_private_repos":4,"disk_usage":76655,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as AaronDovTurkel 
+[info] 
+[debug] [2021-06-16T20:14:17.275Z] >>> [apiv2][query] GET https://api.github.com/repos/aarondovturkel/adt/actions/secrets/public-key type=owner
+[debug] [2021-06-16T20:14:21.071Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-06-16T20:14:22.349Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-06-16T20:14:22.591Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-06-16T20:14:22.815Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-06-16T20:14:25.078Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-06-16T20:14:25.249Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-06-16T20:14:25.408Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
